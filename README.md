@@ -49,32 +49,6 @@ frontend/
 - Node.js et npm.
 - MongoDB pour faire fonctionner le backend une fois son serveur configuré.
 
-## Configuration et démarrage
-
-Le dépôt ne contient pas encore de `package.json`, de point d'entrée Express ou
-de configuration React. Il n'est donc pas encore possible de lancer l'application
-avec `npm install` ou `npm run dev`.
-
-Lors de la configuration du serveur Express, montez les routes hôtels ainsi :
-
-```js
-import hotelRoutes from "./routes/hotelRoutes.js";
-
-app.use("/api/hotels", hotelRoutes);
-```
-
-La page React interroge `GET /api/hotels/search`. Configurez le proxy du serveur
-frontend ou l'URL de l'API en fonction de votre environnement.
-
-Exemple de requête :
-
-```text
-GET /api/hotels/search?destination=Paris&checkIn=2027-06-10&checkOut=2027-06-14&adults=2&children=0&rooms=1
-```
-
-Filtres optionnels disponibles : `roomType`, `roomAmenity` (répétable ou séparé
-par des virgules), `amenity` (répétable ou séparé par des virgules), `minPrice`,
-`maxPrice`, `minRating`, `page` et `limit`.
 
 ## Modèles et disponibilité
 
