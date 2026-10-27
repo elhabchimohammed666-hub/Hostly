@@ -1,3 +1,6 @@
+## License
+   © 2026 Elhabchi Mohammed. All Rights Reserved.
+
 # Hostly — Hotel Booking App
 
 Hostly est un projet de réservation d'hôtels construit autour de la stack MERN
